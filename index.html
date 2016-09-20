@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>RGB Pattern Maker</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  
+  <h1>Source Image</h1>
+  <input type="file" id="inputFile" /> <br><br>      
+  <canvas id="sourceCanvas"></canvas> <br><br>
+  
+  <div id="settings">
+    <h1>Settings</h1>
+    
+    <label>Start Pixel <input type="number" value="0" /></label>
+    <label>Pixel Limit <input type="number" value="" /></label>
+    <label>Delay (ms) <input type="number" value="500" /></label>
+  </div>
+  
+  <h1>LED Preview</h1>
+  <!--<canvas id="ledPreviewCanvas" height="50" width="750"></canvas> <br><br>-->
+  <div id="ledPreviewContainer"></div>  
+  
+  <h1>Code</h1>
+    
+  <button id="copyToClipboard" data-clipboard-target="#outputTextarea">
+      Copy to clipboard
+  </button>    
+  <textarea id="outputTextarea"></textarea> <br><br>
+
+<!-- end of html  -->
+     
+  <script src="textToClipboard.js"></script>
+  <script src="clipboardToCanvas.js"></script>
+  <script src="app.js"></script>  
+  
+</body>
+</html>

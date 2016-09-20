@@ -1,0 +1,41 @@
+#ledPreviewContainer {
+    width: 99%; 
+    border: 1px solid #000;
+    padding: 3px;
+    overflow: hidden;
+    position: relative;
+    height: 43px;
+}
+
+.ledBulb {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+canvas {
+    border: 3px solid #000;
+    /*padding: 5px;*/
+}
+
+textarea {
+    width: 99%;
+    height: 200px;
+    border: 1px solid #000;  
+}
+
+#sourceCanvas {
+    display: none;    
+}
+
+#settings label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+#settings input {
+    width: 5em;
+}
